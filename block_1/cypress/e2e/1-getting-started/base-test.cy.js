@@ -39,8 +39,8 @@ describe('visit base', () => {
     cy.get('header ul li a[href="/login"]').click()
     cy.visit('http://192.168.1.30:3000/')
     cy.get('div.menu').click().wait(2000)
-    cy.get('div.pagination button').should('have.length', 3)
-    .click({ multiple:true }).wait(2000)
+    // cy.get('div.pagination button').should('have.length', 3)
+    // .click({ multiple:true }).wait(2000)
 
   })
 
@@ -57,3 +57,6 @@ describe('visit base', () => {
 
 
 })
+
+
+
