@@ -61,3 +61,19 @@ https://www.selenium.dev/
 
 * //nav/ancestor::* all parents
 * //nav/parent::*  - first parent
+
+
+### Xpath function ###
+
+* $x("//table[@id='customers']/tbody/tr[5]") - w3school/table-html  
+
+* last(),   `$x("//ul[@class='navbar-nav mr-4 mb-2 mb-lg-0 pl-4 pl-lg-2']/li[ last() ]")` получим последний из списка 
+или `$x("//table[@id='customers']/tbody/tr[last()]")`
+
+
+* starts-with(),  `$x("//div[starts-with(@class, 'w3-white')]") ` cssLocator for 
+class = "w3-white w3-padding notranslate w3-padding-16"
+
+
+* text(), локализация по матчу текста  `$x("//td[text()='Maria Anders']")`
+* contains()  - `$x("//h2[contains(text(), 'Define')]")`, all links `$x("//a[contains(@href, 'https')]")` 
